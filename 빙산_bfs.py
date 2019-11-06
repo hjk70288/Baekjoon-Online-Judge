@@ -15,14 +15,15 @@ def check(iceberg):
 def bfs(iceberg,visited,i,j):
     d=deque()   #bfs를 위한 큐 생성 (좌표를 담아둠)
     d.append((i,j))
+    visited[i][j]=1  #방문함 (1)
     while d:
-        i,j=d.pop()
-        visited[i][j]=1  #방문함 (1)
+        i,j=d.popleft()
         for c in range(4):  #상하좌우 체크
             x=i+nx[c]
             y=j+ny[c]
             if x<0 or x>=n or y<0 or y>=m or iceberg[x][y]==0 or visited[x][y]==1:continue
             d.append((x,y))
+            visited[x][y]=1
 
 def nextYear(iceberg):
     copyIceberg=copy.deepcopy(iceberg)  #copy배열은 현재 빙하 위치를 기역하기 위함
