@@ -1,3 +1,5 @@
+# 회의실 배정
+
 import sys
 n=int(sys.stdin.readline())
 meeting=[]  #회의의 시작, 종료 시간을 저장할 리스트

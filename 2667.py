@@ -1,3 +1,5 @@
+# 단지번호 붙이기
+
 def dfs(matrix,x,y,n): #깊이 우선 탐색
     global danji
     danji+=1  #집 수 증가

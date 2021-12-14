@@ -1,3 +1,5 @@
+# 트리의 높이와 너비
+
 import sys
 sys.setrecursionlimit(100000) #재귀 깊이 제한을 100000까지 허용
 n=int(sys.stdin.readline())

@@ -1,4 +1,5 @@
-#백준 2023번 신기한 소수
+# 신기한 소수
+
 import sys
 
 def is_prime(n): #소수 판별 함수

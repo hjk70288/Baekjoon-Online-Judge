@@ -1,3 +1,4 @@
+# 쉬운 계단 수
 dp=[[0 for i in range(10)] for i in range(101)] 
 for i in range(1,10):   #dp[i][j] i자릿수의 j로 시작하는 계단 수의 개수
     dp[1][i]=1    #한자리 계단 수는 1~9 자기자신 하나이다

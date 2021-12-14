@@ -1,5 +1,6 @@
-#입력할때마다 지금까지의 입력의 중간값을 출력하는 프로그램
+# 가운데를 말해요
 #최대힙의 크기(갈이)는 항상 최소힙보다 같거나 1크다
+
 import sys
 import heapq  #최대힙 최소힙 구현을 위한 heapq
 n=int(sys.stdin.readline())
