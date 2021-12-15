@@ -21,7 +21,7 @@ def solve(good_sequence):
 
 # 수열이 좋은수열인지 검사
 def checkIsGoodSequence(sequence):
-    # 뒤에서부터 1개 ~ N // 2 개 씩 짝을지어 짝끼리 값이 같은지 ㄴ비교
+    # 뒤에서부터 1개 ~ N // 2 개 씩 짝을지어 짝끼리 값이 같은지 비교
     for i in range(1, N // 2 + 1):
         if sequence[-i : ] == sequence[-i * 2 : -i]:
             return False
