@@ -63,12 +63,12 @@ def bfs(rx, ry, bx, by):
       
       # 구슬들의 위치가 겹치는 경우
       if next_rx == next_bx and next_ry == next_by:
-        # 방향전환 전 구슬의 X 좌표 차이값
+        # 이동 전 구슬의 X 좌표와 이동 후 구슬의 X 좌표 차이값을 구함
         x_diff = abs(visit_rx - visit_bx)
 
-        # X좌표 차이값이 0 이상이라면 구슬이 X축 방향으로 이동한 것이므로
+        # X 좌표 차이값이 0 이상이라면 구슬이 X축 방향으로 이동한 경우임
         if x_diff > 0:
-          # 더 많은 좌표를 이동한 구슬을 한칸 뒤로 옮김
+          # 더 많은 좌표를 이동한 구슬의 X 좌표를 한칸 뒤로(dx[d] 만큼) 옮김
           if abs(visit_rx - next_rx) < abs(visit_bx - next_bx):
             next_bx -= dx[d]
           else:
