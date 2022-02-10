@@ -14,7 +14,7 @@ dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
 
 # bfs (해당 구역의 크기를 구함)
-def dfs(x, y, div_number):
+def bfs(x, y, div_number):
   queue = deque()
   queue.append((x, y))
   visited[x][y] = [True, div_number]
@@ -36,7 +36,7 @@ div_length_list = {} # 구역별 크기 모음
 for i in range(n):
   for j in range(m):
     if matrix[i][j] == 1:
-        div_length = dfs(i, j, div_number)
+        div_length = bfs(i, j, div_number)
         div_length_list[div_number] = div_length
         div_number += 1
 
