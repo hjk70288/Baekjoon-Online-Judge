@@ -1,5 +1,4 @@
 # Puyo Puyo
-from cgitb import reset
 import sys
 from collections import deque
 
