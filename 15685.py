@@ -42,7 +42,7 @@ def paintDragonCurve():
       # 현 세대가 그려졌던 방향을 추가함
       directionHistory += paintedHistory
 
-# 드래곤 커브 내의 정사각형 갯수 구하기
+# 드래곤 커브 내의 정사각형 개수 구하기
 def countSquare():
   squareCount = 0
   for i in range(101):
