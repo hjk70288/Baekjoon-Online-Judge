@@ -3,8 +3,10 @@ import sys
 
 # 데이터 입력
 n = int(sys.stdin.readline())
-dp = [0 for _ in range(301)]
-stair = [int(sys.stdin.readline()) for _ in range(n)]
+dp = [0 for _ in range(300)]
+stair = [0 for _ in range(300)]
+for i in range(n):
+  stair[i] = int(sys.stdin.readline())
 dp[0] = stair[0] # 첫 번째 계단까지 오르는 경우 최대값
 dp[1] = stair[0] + stair[1] # 두 번째 계단까지 오르는 경우 최대값
 dp[2] = max(stair[0] + stair[2], stair[1] + stair[2]) # 세 번째 계단까지 오르는 경우 최대값
